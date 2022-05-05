@@ -69,6 +69,12 @@ header a {
   padding: 0.8rem 1.2rem;
   border-radius: 3px;
   font-size: 20px;
+  border: 2px solid transparent;
+  transition: .3s;
+}
+
+header a:hover{
+  border: 2px solid var(--vermelho);
 }
 
 .intro {
@@ -87,12 +93,24 @@ header a {
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+  position: relative;
 }
 
 .intro__info h2{
   text-transform: capitalize;
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+.intro__info h2::after{
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--vermelho);
+  position: absolute;
+  top: 60px;
+  right: -30px;
 }
 
 .intro__info button{
@@ -104,23 +122,11 @@ header a {
   padding: .7rem 1.2rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: .3s;
 }
 
-.linha{
-  position: absolute;
-  display: block;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 3px;
-  width: 60px;
-  background-color: var(--vermelho);
-}
-
-.intro__image{
-  background-image: url(img/bicicleta.jpg);
-  background-size: cover;
-  background-position: center;
+.intro__info button:hover{
+  background-color: #900;
 }
 
 .destaque{
@@ -131,22 +137,33 @@ header a {
 }
 
 .destaque h3{
+  background-image: url(img/onda.svg);
   font-size: 64px;
   color: var(--cinza-texto);
   text-transform: uppercase;
+  padding: 60px 0;
 }
 
 .intro__vantagens{
   background-color: #fff;
   padding: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  display: grid;
+}
+
+.intro__vantagens div:nth-child(odd){
+  background-color: var(--cinza-fundo);
 }
 
 .intro__vantagens .info{
+  padding: 1rem;
   display: flex;
   gap: 20px;
+  align-items: center;
+  border-left: 3px solid transparent;
+}
+
+.intro__vantagens .info:hover{
+  border-left-color: var(--vermelho);
 }
 
 .intro__vantagens img{
