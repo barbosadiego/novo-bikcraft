@@ -129,6 +129,11 @@ header a:hover{
   background-color: #900;
 }
 
+.intro__image img{
+  height: 100%;
+  object-fit: cover;
+}
+
 .destaque{
   display: flex;
   align-items: center;
@@ -174,4 +179,53 @@ footer{
   background-color: #fff;
   text-align: center;
   padding: 50px 0;
+}
+
+@media screen and (max-width:900px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  header{
+    padding: 20px 10px 10px;
+  }
+  header ul{
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 20px;
+  }
+  header a{
+    display: inline-block;
+  }
+  main{
+    padding-bottom: 0px;
+  }
+  .intro{
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .intro__info{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .intro__info h2::after{
+    display: none;
+  }
+  .intro__vantagens{
+    padding: 20px;
+  }
+  .destaque{
+    justify-content: center;
+    padding: 10px;
+  }
+  .destaque h3{
+    font-size: 2rem;
+    padding: 0;
+    text-align: center;
+  }
+  footer{
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
 }
