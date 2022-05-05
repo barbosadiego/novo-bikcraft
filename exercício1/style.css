@@ -10,7 +10,6 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--cinza-fundo);
 }
 
 h1, h2, h3, h4, p{
@@ -38,6 +37,14 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+header, main{
+  background-color: var(--cinza-fundo);
+}
+
+main{
+  padding-bottom: 50px;
 }
 
 header {
@@ -148,7 +155,6 @@ header a {
 
 footer{
   background-color: #fff;
-  margin-top: 50px;
   text-align: center;
   padding: 50px 0;
 }
