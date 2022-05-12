@@ -14,11 +14,15 @@
 @import './home/parceiros.css';
 @import './home/depoimento.css';
 
+/* Footer */
+@import './global/footer.css';
+
 /* Bicicletas */
 @import './bicicletas/bicicletas-lista.css';
 
 /* Seguros */
 @import './seguros/seguros.css';
 
-/* Footer */
-@import './global/footer.css';
+/* Termos */
+@import './termos/termos.css';
+
