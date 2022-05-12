@@ -1,6 +1,8 @@
 @import './global/global.css';
 @import './utilidades/tipografia.css';
 @import './utilidades/cores.css';
+
+/* Header */
 @import './global/header.css';
 
 /* Utilidades */
@@ -17,3 +19,6 @@
 
 /* Seguros */
 @import './seguros/seguros.css';
+
+/* Footer */
+@import './global/footer.css';
