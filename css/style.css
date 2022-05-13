@@ -21,6 +21,9 @@
 @import './bicicletas/bicicletas-lista.css';
 @import './bicicletas/bicicletas.css';
 
+/* Bicicleta single page */
+@import './bicicleta-single/bicicleta.css';
+
 /* Seguros */
 @import './seguros/seguros.css';
 @import './seguros/vantagens.css';
