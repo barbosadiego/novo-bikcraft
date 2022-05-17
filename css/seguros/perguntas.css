@@ -56,11 +56,11 @@
   max-width: 80ch;
 }
 
-.perguntas dd{
+.js .perguntas dd{
   display: none;
 }
 
-.perguntas dd.active{
+.js .perguntas dd.active{
   display: block;
 }
 
