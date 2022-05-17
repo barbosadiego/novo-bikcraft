@@ -53,3 +53,10 @@ function eventosGaleria(event) {
 }
 
 galeria.forEach((img) => img.addEventListener('click', eventosGaleria));
+
+
+//Animação
+
+if(window.SimpleAnime){
+  new SimpleAnime()
+}
