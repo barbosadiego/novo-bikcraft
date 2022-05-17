@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 2</title>
+  <style>
+    html{
+      cursor: none;
+    }
+
+    body {
+      background-color: #222;
+      overflow: hidden;
+    }
+
+    .circle {
+      height: 16px;
+      width: 16px;
+      background-color: #84e;
+      border-radius: 50%;
+      border: 1px solid #ffde59;
+      display: inline-block;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="circle" id="circle"></div>
+
+  <script>
+    const circle = document.getElementById('circle');
+    
+    function handleMove({ pageY, pageX }) {
+      circle.style.top = `${pageY}px`;
+      circle.style.left = `${pageX}px`;
+    }
+
+    window.addEventListener('mousemove', handleMove)
+  </script>
+</body>
+
+</html>
